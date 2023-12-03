@@ -37,7 +37,8 @@ Developers working on Java GUI applications often need a quick and convenient wa
     Open a terminal.
         Run the script using the following command:
         
-        ```bash
+      ```
+        
           ./auto-reload.sh YourJavaFile.java
           Reloading Java process...
           {} <==  INPUT "reload" AND PRESS ENTER  
