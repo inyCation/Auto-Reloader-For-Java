@@ -1,9 +1,9 @@
-import React from 'react'
+// import React from 'react'
 
 const Explore = () => {
   return (
     <div className="explore">
-        
+        explore 
     </div>
   )
 }

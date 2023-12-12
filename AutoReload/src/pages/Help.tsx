@@ -1,9 +1,9 @@
-import React from 'react'
+// import React from 'react'
 
 const Help = () => {
   return (
     <div className="help">
-        
+        test help
     </div>
   )
 }
