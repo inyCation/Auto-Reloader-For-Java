@@ -1,7 +1,7 @@
 # Auto-Reloader-For-Java
 # Java Auto-Reload Script
 
-This script (`auto-reload.sh` for Linux and macOS) automates the reloading of a Java GUI program whenever changes are made to the associated Java source file. It includes features for both automatic and manual reloading.
+This script (`run.sh` for Linux and macOS) automates the reloading of a Java GUI program whenever changes are made to the associated Java source file. It includes features for both automatic and manual reloading.
 
 ## Use Case
 
@@ -39,7 +39,7 @@ Developers working on Java GUI applications often need a quick and convenient wa
         
       ```
         
-          ./auto-reload.sh YourJavaFile.java
+          ./run.sh YourJavaFile.java
           Reloading Java process...
           {} <==  INPUT "reload" AND PRESS ENTER  
         ```   
