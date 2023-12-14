@@ -11,10 +11,7 @@
     height: 100vh;
     left: 0;
     backdrop-filter: blur(2px);
-    
-    a {
-        // color: #f2f2f2;
-    }
+
 
     >.menu {
         height: 65vh;
@@ -115,22 +112,25 @@
 
 .home {
     @include dispFlex(space-evenly, start, column);
+
     >.hero {
         width: 31vw;
         position: absolute;
         left: 20%;
         color: #f0f0f0;
 
-        >.title{
+        >.title {
             font-family: 'Courier New', Courier, monospace;
             font-size: 3rem;
             margin-bottom: 3rem;
         }
-        >.desc{
+
+        >.desc {
             font-size: 1.2rem;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
-        >.btn_read_more{
+
+        >.btn_read_more {
             width: max-content;
             margin-top: 3rem;
             background-color: #e7dd28;
@@ -141,21 +141,24 @@
     }
 }
 
-.about{
+.about {
     @include dispFlex(space-evenly, start, column);
-    >.details{
+
+    >.details {
         @include dispFlex(space-between, start, column);
         position: absolute;
         width: 31vw;
         height: 50%;
         left: 30%;
-        >.title{
+
+        >.title {
             font-family: $font_pri;
             width: 180%;
             font-size: 4rem;
             // margin-bottom: 10rem;
         }
-        >.about_project{
+
+        >.about_project {
             // position: absolute;
             // top: 70%;
             background-color: #bebcbc22;
@@ -166,7 +169,8 @@
             backdrop-filter: blur(15px);
             border-radius: .5rem;
         }
-        >.download_script{
+
+        >.download_script {
             border-radius: .4rem;
             width: max-content;
             background: #e7dd28;
@@ -174,3 +178,27 @@
         }
     }
 }
+
+.help {
+    @include dispFlex(space-around, center, row);
+
+    >.sideImg {
+        margin-left: 15rem;
+
+        >img {
+            width: 20rem;
+            mix-blend-mode: darken;
+        }
+    }
+
+    >.download_now {
+        width: max-content;
+        background-color: #63636362;
+        padding: .8rem 1.7rem;
+        backdrop-filter: blur(2px);
+        background-color: #e7dd28;
+        border-radius: .4rem;
+        padding: .6rem 1.3rem;
+    }
+}
+

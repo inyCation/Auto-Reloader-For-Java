@@ -1,6 +1,6 @@
 // import React from 'react'
 
-const Explore = () => {
+const Explore : React.FC = () => {
   return (
     <div className="explore">
         explore 

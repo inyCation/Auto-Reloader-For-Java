@@ -1,6 +1,6 @@
 // import React from 'react'
 
-const Recommendation = () => {
+const Recommendation : React.FC= () => {
   return (
     <div className="rec">
         rec
