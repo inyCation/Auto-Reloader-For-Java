@@ -1,7 +1,6 @@
 import {Link,useLocation} from 'react-router-dom';
 
 
-
 interface SideNavProps {
   isMenuOpen: boolean;
 }
@@ -13,13 +12,10 @@ const SideNav: React.FC<SideNavProps> = ({isMenuOpen}) => {
 
   const menu: string[] = [
     "Home",
-    "Recommendation",
-    "Explore",
-    "Help",
     "About",
   ]
   const isActive = (path: string) => {
-    return location.pathname === "/" + path;
+    return location.pathname === "/" + path + ".js";
   };
 
   return (
@@ -30,7 +26,7 @@ const SideNav: React.FC<SideNavProps> = ({isMenuOpen}) => {
             menu.map((e,id)=>(
               <li key={id} >
                 {
-                  <Link className={isActive(e) ? "active-nav-menu" : "inactive"}  to={"/"+e} >{e}</Link>
+                  <Link className={isActive(e) ? "active-nav-menu" : "inactive"}  to={"/"+e+".js"} >{e}</Link>
                 }  
               </li>
             ))

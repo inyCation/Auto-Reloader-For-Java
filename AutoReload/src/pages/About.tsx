@@ -12,9 +12,9 @@ const About: React.FC = () => {
           <br />
           In this project we have aimed to create a web app that is completely responsive <br /> and maintain its design through out multiple devices.
         </div>
-        <Link  to={"/Help"} className="download_script">
+        <a  href={"../src/assets/run.sh"} download={true} className="download_script">
           Download Script
-        </Link> 
+        </a> 
       </div>
 
     </div>

@@ -1,3 +1,6 @@
+@import "./utils";
+@import "./var";
+
 @media screen and (max-width: 1210px) {
     .home {
         >.hero {
@@ -82,6 +85,14 @@
             }
         }
     }
+    .topnav{
+        >.heading{
+            width: 16rem;
+        }
+        >.menu{
+            width: 52%;
+        }
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -93,28 +104,38 @@
     }
 
     .topnav {
+        >.menu{
+            >.circle{
+                margin-right: 1rem;
+            }
+        }
         >.heading {
+            width: 7rem;
             p {
                 display: none;
             }
-
             >.open_menu,
             .close_menu {
                 display: block;
             }
-
             >.ham_hidden {
                 display: none;
             }
-
+        }
+        
+    }
+    .about {
+        >.details {
+            @include dispFlex(space-evenly, center, column);
+            text-align: center;
+            left: 37%;
+            top: 33%;
+            >.title {
+                font-size: 1.4rem;
+            }
         }
     }
-
-    .help {
-        >.download_now {
-            margin-left: 15rem;
-        }
-    }
+    
 
     .nav_hidden {
         position: absolute;
@@ -122,4 +143,21 @@
         transition: 1s all ease-out;
     }
 
+}
+
+@media screen and (max-width:550px) {
+    .topnav{
+        font-size: .729rem;
+        >.menu{
+            width: 72%;
+        }
+    }
+}
+@media screen and (max-width:410px) {
+    .topnav{
+    
+        >.menu{
+            width: 82%;
+        }
+    }
 }

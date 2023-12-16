@@ -56,19 +56,6 @@
 
 .about {
     @include backGroundImg("../assets/feipeng-yi--qVMdZir4wo-unsplash.jpg");
-    filter: blur(2);
-}
-
-.explore {
-    @include backGroundImg("../assets/kimon-maritz-o2B9YF7X6wI-unsplash.jpg");
-}
-
-.help {
-    @include backGroundImg("../assets/sveinn-birkir-bjornsson-2cL8ZO7FekI-unsplash.jpg");
-}
-
-.rec {
-    @include backGroundImg("../assets/mw960367054-k8AKS79DfFg-unsplash.jpg");
 }
 
 .topnav {
@@ -161,12 +148,11 @@
             font-family: $font_pri;
             width: 180%;
             font-size: 4rem;
-            // margin-bottom: 10rem;
+            
         }
 
         >.about_project {
-            // position: absolute;
-            // top: 70%;
+            
             background-color: #bebcbc22;
             padding: 1rem 3rem;
             color: rgb(211, 209, 209);

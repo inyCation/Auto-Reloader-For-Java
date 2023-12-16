@@ -13,7 +13,7 @@ const Home: React.FC = () => {
             This project aims to provide a script files that will re-run a JAVA Program <br /> without any effort to re-run the program mannually.
           </div>
           <div className="btn_read_more">
-            <Link to={"/About"} > Read More</Link>
+            <Link to={"/About.js"} > Read More</Link>
           </div>
         </div>
       </div>

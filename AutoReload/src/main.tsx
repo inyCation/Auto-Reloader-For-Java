@@ -3,9 +3,6 @@ import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 
 import Home from './pages/Home.tsx';
-import Recommendation from './pages/Recommendation.tsx';
-import Explore from './pages/Explore.tsx';
-import Help from './pages/Help.tsx';
 import About from './pages/About.tsx';
 
 import './styles/main.scss'
@@ -22,23 +19,11 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "Home",
+        path: "Home.js",
         element: <Home />,
       },
       {
-        path:"Recommendation",
-        element: <Recommendation />,
-      },
-      {
-        path:"Explore",
-        element: <Explore />,
-      },
-      {
-        path:"Help",
-        element: <Help />,
-      },
-      {
-        path:"About",
+        path:"About.js",
         element: <About />,
       },
     ],
