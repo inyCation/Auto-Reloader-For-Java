@@ -2,10 +2,12 @@ import {Link,useLocation} from 'react-router-dom';
 
 
 
+interface SideNavProps {
+  isMenuOpen: boolean;
+}
 
 
-
-const SideNav: React.FC = () => {
+const SideNav: React.FC<SideNavProps> = ({isMenuOpen}) => {
   const location = useLocation();
   
 
@@ -22,8 +24,8 @@ const SideNav: React.FC = () => {
 
   return (
     <>
-      <div className='nav'>
-        <ul className='menu'>
+      <div className={`nav ${isMenuOpen ? 'nav_hidden' : ''}`}>
+        <ul className="menu">
           {
             menu.map((e,id)=>(
               <li key={id} >

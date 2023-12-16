@@ -9,6 +9,7 @@ import Help from './pages/Help.tsx';
 import About from './pages/About.tsx';
 
 import './styles/main.scss'
+import "./styles/mediaQuery.scss"
 
 import {
   createBrowserRouter,

@@ -1,5 +1,125 @@
-@media screen and (width: 1210px) {
-    body{
-        display: none;
+@media screen and (max-width: 1210px) {
+    .home {
+        >.hero {
+            left: 24%;
+        }
     }
+}
+
+@media screen and (max-width: 1070px) {
+    .home {
+        >.hero {
+            left: 37%;
+        }
+    }
+}
+
+@media screen and (max-width: 906px) {
+    .topnav {
+        >.menu {
+            width: 36%;
+        }
+    }
+
+    .about {
+        >.details {
+            >.title {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .topnav {
+        >.menu {
+            width: 46%;
+        }
+    }
+
+    .about {
+        >.details {
+            left: 35%;
+
+            >.about_project {
+                display: none;
+            }
+
+            >.download_script {
+                margin-bottom: 15rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .about {
+        >.details {
+            left: 42%;
+
+        }
+    }
+
+    .home {
+        >.hero {
+            width: 55vw;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .home {
+        >.hero {
+            width: 60vw;
+            left: 40%;
+
+            >.title {
+                font-size: 2rem;
+            }
+
+            >.desc {
+                font-size: .9rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .home {
+        >.hero {
+            left: 19%;
+            text-align: center;
+        }
+    }
+
+    .topnav {
+        >.heading {
+            p {
+                display: none;
+            }
+
+            >.open_menu,
+            .close_menu {
+                display: block;
+            }
+
+            >.ham_hidden {
+                display: none;
+            }
+
+        }
+    }
+
+    .help {
+        >.download_now {
+            margin-left: 15rem;
+        }
+    }
+
+    .nav_hidden {
+        position: absolute;
+        left: -29rem;
+        transition: 1s all ease-out;
+    }
+
 }

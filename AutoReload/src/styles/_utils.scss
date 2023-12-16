@@ -11,6 +11,10 @@ a{
     text-decoration: none;
 }
 
+body{
+    overflow: hidden;
+}
+
 @mixin backGroundImg($img){
     background-image: url($img);
     background-position: center;

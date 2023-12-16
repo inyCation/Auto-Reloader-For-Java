@@ -1,16 +1,14 @@
 // import React from 'react'
+import { } from "react"
 
-const Help : React.FC = () => {
+const Help: React.FC = () => {
   return (
     <>
       <div className="help">
-          <div className="sideImg">
-            <img src={"../../src/assets/bash.jpg"} alt="" />
-          </div>
-          <div className="download_now">
-            <a href={"../../src/assets/run.sh"} download={true}>Download</a>
-          </div>
+        <div className="sideImg">
           
+        </div>
+        
       </div>
     </>
   )

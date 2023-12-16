@@ -1,17 +1,28 @@
 import React from 'react'
+import {Link} from "react-router-dom";
+import { LuMenuSquare } from "react-icons/lu";
+import { IoClose } from "react-icons/io5";
 
-const TopNav: React.FC = () => {
+interface TopNavProps {
+  toggleSideNav: ()=>void;
+  isMenuOpen: boolean;
+}
+const TopNav: React.FC<TopNavProps> = ({toggleSideNav,isMenuOpen}) => {
+
   return (
     <div className='topnav'>
-        <div className="heading">
-            <p>trppd_</p>
+      <div className="heading">
+        <p>{!isMenuOpen?"":"trppd_"}</p>
+        <div className={`${isMenuOpen ? 'open_menu' : ''}`} onClick={toggleSideNav}>
+          {isMenuOpen?(<LuMenuSquare />) : (<IoClose />)}
         </div>
-        <ul className='menu'>
-            <li>My Collection</li>
-            <li> | </li>
-            <li>Iny Cation</li>
-            <div className="circle"></div>
-        </ul>
+      </div>
+      <ul className='menu'>
+        <a href={"https://github.com/inyCation/Auto-Reloader-For-Java"}>Documentation</a>
+        <li> | </li>
+        <a href={"../../src/assets/run.sh"} download={true}>Download</a>
+        <div className="circle"></div>
+      </ul>
     </div>
   )
 }

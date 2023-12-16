@@ -10,8 +10,10 @@
     width: 15rem;
     height: 100vh;
     left: 0;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px); 
+    transition: 1s all ease-out;
 
+    z-index: 25;
 
     >.menu {
         height: 65vh;
@@ -22,7 +24,6 @@
             width: 10rem;
             margin: .4rem 0rem;
             padding: .7rem;
-
             border-radius: .5rem;
         }
 
@@ -34,10 +35,7 @@
             color: #f2f2f2;
             position: relative;
 
-
-
             &::after {
-
                 content: "";
                 position: absolute;
                 top: 50%;
@@ -45,12 +43,9 @@
                 width: 3rem;
                 height: 2px;
                 background-color: #f2f2f2;
-
-
             }
         }
     }
-
 }
 
 
@@ -83,22 +78,30 @@
     width: 100vw;
     height: 3rem;
     font-family: $font_pri;
-
+    z-index: 25;
     >.heading {
         display: grid;
         place-items: center;
-
         width: 18rem;
         height: 3rem;
-
         background-color: #eff710db;
+        p{
+            display: block;
+        }
+        .open_menu,
+        .close_menu {
+            display: none;
+        }
 
     }
 
     >.menu {
         @include dispFlex(space-between, center, row);
         width: 30%;
+        a{
+        color: #0f0f0f;
 
+        }
         >.circle {
             background-image: url("../assets/BlackSquare.png");
             border-radius: 12.5rem;
@@ -114,10 +117,13 @@
     @include dispFlex(space-evenly, start, column);
 
     >.hero {
-        width: 31vw;
+        @include dispFlex(center, center, column);
+
+        width: 48vw;
         position: absolute;
-        left: 20%;
+        left: 32%;
         color: #f0f0f0;
+        text-align: center;
 
         >.title {
             font-family: 'Courier New', Courier, monospace;
@@ -180,25 +186,25 @@
 }
 
 .help {
-    @include dispFlex(space-around, center, row);
-
+    @include dispFlex(space-evenly, center, column);
+    position: relative;
     >.sideImg {
-        margin-left: 15rem;
-
+        @include dispFlex(space-evenly, center, row);
+        // position: absolute;
+        width: 40%;
         >img {
-            width: 20rem;
+            width: 10rem;
             mix-blend-mode: darken;
         }
+        >a{
+            width: max-content;
+            background-color: #63636362;
+            padding: .8rem 1.7rem;
+            backdrop-filter: blur(2px);
+            background-color: #e7dd28;
+            border-radius: .4rem;
+            padding: .6rem 1.3rem;
+        }
     }
-
-    >.download_now {
-        width: max-content;
-        background-color: #63636362;
-        padding: .8rem 1.7rem;
-        backdrop-filter: blur(2px);
-        background-color: #e7dd28;
-        border-radius: .4rem;
-        padding: .6rem 1.3rem;
-    }
+   
 }
-
