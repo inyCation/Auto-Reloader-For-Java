@@ -15,7 +15,7 @@ const SideNav: React.FC<SideNavProps> = ({isMenuOpen}) => {
     "About",
   ]
   const isActive = (path: string) => {
-    return location.pathname === "/" + path + ".js";
+    return location.pathname === "/" + path;
   };
 
   return (
@@ -26,7 +26,7 @@ const SideNav: React.FC<SideNavProps> = ({isMenuOpen}) => {
             menu.map((e,id)=>(
               <li key={id} >
                 {
-                  <Link className={isActive(e) ? "active-nav-menu" : "inactive"}  to={"/"+e+".js"} >{e}</Link>
+                  <Link className={isActive(e) ? "active-nav-menu" : "inactive"}  to={"/"+e} >{e}</Link>
                 }  
               </li>
             ))

@@ -12,11 +12,11 @@ function App() {
   };
 
   return (
-    <>
+    <div className='context'>
        <SideNav isMenuOpen={isSideNavOpen} />
       <TopNav toggleSideNav={toggleSideNav} isMenuOpen={isSideNavOpen} />
       <Outlet />
-    </>
+    </div>
   )
 }
 

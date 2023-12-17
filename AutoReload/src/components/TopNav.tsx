@@ -11,7 +11,7 @@ const TopNav: React.FC<TopNavProps> = ({toggleSideNav,isMenuOpen}) => {
   return (
     <div className='topnav'>
       <div className="heading">
-        <p>{!isMenuOpen?"":"trppd_"}</p>
+        <p>{!isMenuOpen?"":"0 & 1"}</p>
         <div className={`${isMenuOpen ? 'open_menu' : ''}`} onClick={toggleSideNav}>
           {isMenuOpen?(<LuMenuSquare />) : (<IoClose />)}
         </div>

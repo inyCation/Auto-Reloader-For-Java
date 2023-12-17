@@ -3,6 +3,11 @@
 
 
 
+.context{
+    @include dispFlex(space-around,center,column);
+    @include backGroundImg("../assets/samuel-ferrara-1527pjeb6jg-unsplash.jpg");
+}
+
 .nav {
     @include dispFlex(space-around, center, column);
     position: absolute;
