@@ -11,8 +11,8 @@ const About: React.FC = () => {
           <br />
           In this project we have aimed to create a web app that is completely responsive <br /> and maintain its design through out multiple devices.
         </div>
-        <a  href={"../src/assets/run.sh"} download={true} className="download_script">
-          Download Script
+        <a  href={"https://github.com/inyCation/Auto-Reloader-For-Java"} className="download_script">
+          View Docs
         </a> 
       </div>
 

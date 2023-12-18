@@ -6,7 +6,28 @@ interface TopNavProps {
   toggleSideNav: ()=>void;
   isMenuOpen: boolean;
 }
+
 const TopNav: React.FC<TopNavProps> = ({toggleSideNav,isMenuOpen}) => {
+
+  const downloadScript = async () =>{
+    try {
+        const script  = await fetch("../../src/assets/run.sh");
+        const content = await script.text();
+        const blob = new Blob([content], { type: 'application/x-sh' });
+        const a = document.createElement('a');
+        a.download = 'run.sh';
+        a.href = window.URL.createObjectURL(blob);
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    } catch (error) {
+      console.log("ERROR", error)
+    }
+  }
+
+
+
+
 
   return (
     <div className='topnav'>
@@ -19,7 +40,7 @@ const TopNav: React.FC<TopNavProps> = ({toggleSideNav,isMenuOpen}) => {
       <ul className='menu'>
         <a href={"https://github.com/inyCation/Auto-Reloader-For-Java"}>Documentation</a>
         <li> | </li>
-        <a href={"../../src/assets/run.sh"} download={true}>Download</a>
+        <a onClick={downloadScript}>Download</a>
         <div className="circle"></div>
       </ul>
     </div>
