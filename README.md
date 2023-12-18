@@ -23,10 +23,6 @@ Developers working on Java GUI applications often need a quick and convenient wa
 
 - **Bash Shell:** The script assumes the availability of Bash. Most Linux and macOS systems come with Bash pre-installed.
 
-# Installation
-
-## Linux and macOS
-
 ## Manual Reload
 
 
